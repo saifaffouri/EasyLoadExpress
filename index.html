@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EasyLoadExpress | Reliable Freight Trucking</title>
+<style>
+  :root {
+    --navy: #0b2545;
+    --orange: #f4762c;
+    --light: #f7f8fa;
+    --gray: #6b7280;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--navy);
+    line-height: 1.6;
+    background: #fff;
+  }
+  a { text-decoration: none; color: inherit; }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header */
+  header {
+    background: var(--navy);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .logo span { color: var(--orange); }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+  }
+  nav a {
+    color: #fff;
+    font-weight: 500;
+  }
+  nav a:hover { color: var(--orange); }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--navy), #163a63);
+    color: #fff;
+    padding: 90px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 16px;
+  }
+  .hero p {
+    font-size: 1.15rem;
+    color: #d7deea;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.2s ease;
+  }
+  .btn:hover { background: #d9631e; }
+
+  /* Sections */
+  section { padding: 70px 20px; }
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--gray);
+    max-width: 550px;
+    margin: 0 auto 45px;
+  }
+
+  /* Services */
+  .services {
+    background: var(--light);
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 26px;
+  }
+  .service-card {
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(11, 37, 69, 0.08);
+  }
+  .service-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 14px;
+  }
+  .service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+  }
+  .service-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+
+  /* About */
+  .about .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-text { flex: 1 1 400px; }
+  .about-text p { color: var(--gray); margin-bottom: 20px; }
+  .stats {
+    flex: 1 1 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .stat {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+  }
+  .stat .num {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--orange);
+  }
+  .stat .label {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+
+  /* Contact / Footer */
+  footer {
+    background: var(--navy);
+    color: #d7deea;
+    padding: 50px 20px 24px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .footer-grid h4 {
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  .footer-grid p, .footer-grid a {
+    color: #b9c3d4;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #8b96ab;
+  }
+
+  @media (max-width: 600px) {
+    nav ul { gap: 16px; flex-wrap: wrap; justify-content: center; }
+    header .container { flex-direction: column; gap: 12px; }
+    .hero h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">Easy<span>Load</span>Express</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <h1>Reliable Freight. Delivered On Time.</h1>
+  <p>EasyLoadExpress moves your freight coast to coast with dependable trucking, real-time tracking, and a team that treats every load like it's the only one.</p>
+  <a href="#contact" class="btn">Get a Quote</a>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-sub">Full-service freight solutions built around your schedule and your bottom line.</p>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon">🚛</div>
+        <h3>Full Truckload</h3>
+        <p>Dedicated trucks for large shipments, direct from pickup to delivery with no stops.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📦</div>
+        <h3>LTL Shipping</h3>
+        <p>Cost-effective less-than-truckload options for smaller freight loads.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📍</div>
+        <h3>Freight Tracking</h3>
+        <p>Real-time visibility into every shipment from dispatch to drop-off.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛠️</div>
+        <h3>Logistics Support</h3>
+        <p>Route planning, scheduling, and dedicated support for your supply chain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-text">
+      <h2 class="section-title" style="text-align:left;">About EasyLoadExpress</h2>
+      <p>For over a decade, EasyLoadExpress has helped businesses move freight safely and efficiently across the country. Our experienced drivers and modern fleet mean your cargo arrives on time, every time.</p>
+      <p>Whether you need a single truckload or ongoing logistics support, our team is ready to build a shipping plan that works for you.</p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="num">12+</div>
+        <div class="label">Years in Business</div>
+      </div>
+      <div class="stat">
+        <div class="num">150+</div>
+        <div class="label">Trucks in Fleet</div>
+      </div>
+      <div class="stat">
+        <div class="num">48</div>
+        <div class="label">States Covered</div>
+      </div>
+      <div class="stat">
+        <div class="num">99%</div>
+        <div class="label">On-Time Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>EasyLoadExpress</h4>
+        <p>Reliable trucking &amp; freight solutions nationwide.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: dispatch@easyloadexpress.com</p>
+        <p>1200 Freight Way, Dallas, TX</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 EasyLoadExpress. All rights reserved. (Mock site for demonstration purposes)
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
